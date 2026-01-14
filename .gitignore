@@ -1,0 +1,93 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+#################################
+# NODE / FRONTEND
+#################################
+node_modules/
+dist/
+build/
+
+#################################
+# DATA, UPLOADS & USER CONTENT
+#################################
+data/
+uploads/
+
+#################################
+# MACHINE LEARNING
+#################################
+ml-backend/models/
+ml-backend/data/
+*.h5
+*.hdf5
+*.pt
+*.pth
+*.pkl
+*.joblib
+
+#################################
+# DATABASE / DUMPS
+#################################
+database/
+*.sql
+
+#################################
+# ENVIRONMENT VARIABLES (SECURITY)
+#################################
+.env
+.env.docker
+
+#################################
+# LOGS & CACHE
+#################################
+logs/
+*.log
+.cache/
+
+#################################
+# OS & EDITOR FILES
+#################################
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+#################################
+# OPTIONAL: LARGE GENERATED FILES
+#################################
+bun.lockb
+
+#################################
+# Python Virtual Environments
+#################################
+.venv/
+*/.venv/
+
+#################################
+# Model and Backend (Local Only)
+#################################
+Model and backend/
+

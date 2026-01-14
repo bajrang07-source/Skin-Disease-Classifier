@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Medical teal palette - trustworthy and calming */
+    --background: 0 0% 98%;
+    --foreground: 195 24% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 195 24% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 195 24% 15%;
+
+    /* Primary: Deep teal - medical trust */
+    --primary: 190 65% 45%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 190 65% 55%;
+    --primary-dark: 190 65% 35%;
+
+    /* Secondary: Soft gray for cards */
+    --secondary: 195 15% 96%;
+    --secondary-foreground: 195 24% 15%;
+
+    /* Muted: Subtle backgrounds */
+    --muted: 195 10% 94%;
+    --muted-foreground: 195 12% 45%;
+
+    /* Accent: Medical indigo */
+    --accent: 230 55% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    /* Success: Green for confirmations */
+    --success: 145 65% 45%;
+    --success-foreground: 0 0% 100%;
+
+    /* Warning: Amber for low confidence */
+    --warning: 40 95% 55%;
+    --warning-foreground: 40 15% 15%;
+
+    /* Destructive: Red for errors/emergencies */
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 195 15% 88%;
+    --input: 195 15% 88%;
+    --ring: 190 65% 45%;
+
+    --radius: 0.75rem;
+
+    /* Transitions */
+    --transition-smooth: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    
+    /* Shadows */
+    --shadow-sm: 0 1px 2px 0 hsl(195 15% 15% / 0.05);
+    --shadow-md: 0 4px 6px -1px hsl(195 15% 15% / 0.08), 0 2px 4px -1px hsl(195 15% 15% / 0.04);
+    --shadow-lg: 0 10px 15px -3px hsl(195 15% 15% / 0.1), 0 4px 6px -2px hsl(195 15% 15% / 0.05);
+  }
+
+  .dark {
+    --background: 195 30% 8%;
+    --foreground: 195 10% 95%;
+
+    --card: 195 25% 12%;
+    --card-foreground: 195 10% 95%;
+
+    --popover: 195 25% 12%;
+    --popover-foreground: 195 10% 95%;
+
+    --primary: 190 65% 50%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 190 65% 60%;
+    --primary-dark: 190 65% 40%;
+
+    --secondary: 195 20% 18%;
+    --secondary-foreground: 195 10% 95%;
+
+    --muted: 195 20% 16%;
+    --muted-foreground: 195 10% 65%;
+
+    --accent: 230 55% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    --success: 145 60% 50%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 40 90% 60%;
+    --warning-foreground: 40 15% 15%;
+
+    --destructive: 0 65% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 195 20% 24%;
+    --input: 195 20% 24%;
+    --ring: 190 65% 50%;
+
+    --shadow-sm: 0 1px 2px 0 hsl(0 0% 0% / 0.2);
+    --shadow-md: 0 4px 6px -1px hsl(0 0% 0% / 0.3), 0 2px 4px -1px hsl(0 0% 0% / 0.2);
+    --shadow-lg: 0 10px 15px -3px hsl(0 0% 0% / 0.4), 0 4px 6px -2px hsl(0 0% 0% / 0.3);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
