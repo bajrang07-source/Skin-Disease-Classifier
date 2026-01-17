@@ -98,6 +98,7 @@ def predict():
             "confidence": round(confidence, 2)
         })
 
+
     except Exception as e:
         import traceback
         error_details = traceback.format_exc()
