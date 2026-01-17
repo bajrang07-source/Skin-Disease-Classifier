@@ -77,6 +77,7 @@ try {
     echo json_encode([
         "message" => "Server error",
         "error" => $e->getMessage()
+                     
     ]);
 }
 
