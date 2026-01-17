@@ -41,6 +41,7 @@ foreach ($file in $apiFiles) {
             $newContent = $corsHeader + $content
             
             # Write back to file
+            
             Set-Content -Path $file -Value $newContent -NoNewline
             
             Write-Host "Updated: $file"
