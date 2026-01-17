@@ -39,3 +39,4 @@ Example Response:
 - The API automatically preprocesses and resizes inputs.
 - The dataset is NOT needed for predictions.
 - Frontend can send form-data (key: "file") directly to /predict.
+
